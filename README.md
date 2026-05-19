@@ -27,7 +27,7 @@
 
 ---
 
-## 📌 Introduction & Overview
+## Introduction & Overview
 
 **Aquarium** is a premium gamified utility designed for Obsidian and Datacore that transforms your daily habits or tasks into an active simulation. Instead of displaying a static checklist, items are populated as individual, autonomously moving fish inside an edge-to-edge aquarium.
 
@@ -35,26 +35,26 @@ The component manages responsive scaling calculations to ensure the swim area pe
 
 ---
 
-## ✨ Features
+## Features
 
-### 🛡️ Runtime & Agentic Safety
+### Runtime & Agentic Safety
 *   **Autonomous Swimming Physics**: Features independent swimming loops for each fish, incorporating randomized horizontal turns, vertical drift rates, and boundary edge bounce physics.
 *   **Adaptive Swim Area**: Calculates proportional boundaries dynamically as percentages of the visible background animation, adapting responsively to any panel size.
 *   **Smooth Vector Rendering**: Utilizes high-performance hardware-accelerated 3D translations (`translate3d`) and browser layout hints (`will-change`) to sustain 60 FPS animation states.
 
-### 🔐 Security & Integrations
+### Security & Integrations
 *   **Zero-Dependency Execution**: Dynamically reads third-party packages (`lottie-player` and `Fuse.js`) via a robust loader interface on first run.
 *   **System filesystem Caching**: Stores script binaries in the vault cache directory (`.datacore/script_cache`) to guarantee immediate and offline-ready mounts.
 *   **DOM Isolation**: Applies scoped styles and dynamically injected suppression stylesheets that clean up upon component unmount, preventing style leaks into global Obsidian workspace panels.
 
-### 📐 User Interface & Developer Loop
+### User Interface & Developer Loop
 *   **Draggable Calibration Debugger**: Renders a draggable settings panel with fine-tuning range sliders to adjust the boundary box visually, with a quick-copy command to export configuration blocks.
 *   **Interactive Tooltips**: Pauses animation on hover to reveal task names in floating styled tooltips, or pins fish to scale them up permanently.
 *   **Corporate-Compliant UI**: Implements a clean, emoji-free loader layout using animated vector icons (`loader-2`) rather than standard emoji characters.
 
 ---
 
-## 📦 Directory Index & Components
+## Directory Index & Components
 
 The package exposes the following compiled files:
 
@@ -72,27 +72,6 @@ The package exposes the following compiled files:
 
 ---
 
-## 🚀 Quick Start
-
-Create an Obsidian note and paste the following snippet into it:
-
-```datacorejsx
-const activeFile = dc.resolvePath("AQUARIUM") || "_RESOURCES/DATACORE/AQUARIUM/AQUARIUM";
-const folderPath = activeFile.substring(0, activeFile.lastIndexOf('/'));
-const { View } = await dc.require(folderPath + "/src/index.jsx");
-return await View({ 
-  folderPath, 
-  dc, 
-  fishes: [
-    { name: "Morning Exercise" },
-    { name: "Read Research Papers" },
-    { name: "Code New Features" }
-  ] 
-});
-```
-
----
-
-## 👥 Contributors
+## Contributors
 
 *   **firestorm** (Original creator of the Aquarium Visualizer)
