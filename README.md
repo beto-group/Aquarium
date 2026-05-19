@@ -61,11 +61,11 @@ The package exposes the following compiled files:
 | File | Description |
 | :--- | :--- |
 | **[AQUARIUM.md](AQUARIUM.md)** | The main entry point designed to be loaded inside Obsidian workspace leaves. |
-| **[_RESOURCES/DATACORE/AQUARIUM/src/index.jsx](_RESOURCES/DATACORE/AQUARIUM/src/index.jsx)** | Main loader hook that resolves paths and wraps the application within JSX boundaries. |
-| **[_RESOURCES/DATACORE/AQUARIUM/src/App.jsx](_RESOURCES/DATACORE/AQUARIUM/src/App.jsx)** | View coordinator that resolves fuzzy file names, handles status bar suppression, and renders compact/full-tab nodes. |
-| **[_RESOURCES/DATACORE/AQUARIUM/src/components/Aquarium.jsx](_RESOURCES/DATACORE/AQUARIUM/src/components/Aquarium.jsx)** | Manages background Lottie renderers, debug panel actions, and layout width scaling. |
-| **[_RESOURCES/DATACORE/AQUARIUM/src/components/FishComponent.jsx](_RESOURCES/DATACORE/AQUARIUM/src/components/FishComponent.jsx)** | Handles animation loop triggers, vector positions, hovered states, and tooltip DOM overlays. |
-| **[_RESOURCES/DATACORE/AQUARIUM/src/utils/loadScript.js](_RESOURCES/DATACORE/AQUARIUM/src/utils/loadScript.js)** | Dynamic utility that handles script downloads and writes them to the local vault adapter cache. |
+| **[src/index.jsx](src/index.jsx)** | Main loader hook that resolves paths and wraps the application within JSX boundaries. |
+| **[src/App.jsx](src/App.jsx)** | View coordinator that resolves fuzzy file names, handles status bar suppression, and renders compact/full-tab nodes. |
+| **[src/components/Aquarium.jsx](src/components/Aquarium.jsx)** | Manages background Lottie renderers, debug panel actions, and layout width scaling. |
+| **[src/components/FishComponent.jsx](src/components/FishComponent.jsx)** | Handles animation loop triggers, vector positions, hovered states, and tooltip DOM overlays. |
+| **[src/utils/loadScript.js](src/utils/loadScript.js)** | Dynamic utility that handles script downloads and writes them to the local vault adapter cache. |
 | **[METADATA.md](METADATA.md)** | Machine-readable indexing manifest outlining component capabilities, type, and contributors. |
 | **[CONTRIBUTION.md](CONTRIBUTION.md)** | Contributor architecture specifications and development guidelines. |
 | **[LICENSE.md](LICENSE.md)** | MIT open-source license. |
